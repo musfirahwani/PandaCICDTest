@@ -40,11 +40,12 @@ jobs:
           cat README.md
 
       - name: discord
-        uses: discord-actions/message@5c7149c81a83146e5d01f142be1bf87a61831c4d
+        uses: cl8dep/action-discord@0.1 #discord-actions/message@5c7149c81a83146e5d01f142be1bf87a61831c4d
         with: 
-         webhookUrl: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
+         webhook: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
          message: testz
-         
+         username: Changeuser
+         avatar: https://upload.wikimedia.org/wikipedia/commons/2/21/Johnny_Depp_2020.jpg         
 
         
 
