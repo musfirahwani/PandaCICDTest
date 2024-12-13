@@ -24,4 +24,17 @@ jobs:
       - name: testing
         run: |
           go test -cover
+
+      - name: checkout prviate repo remotely
+        uses: actions/checkout@v4
+        with:
+          repository: musfirahwani/pandahiddenrepo #need to know username and repo name
+          path: hiddenFolder
+          token: ${{ secrets.pandaciCD }}
+
+      - name: list out hidden things
+        run: |
+          ls
+          cd hiddenFolder
+          ls
   
