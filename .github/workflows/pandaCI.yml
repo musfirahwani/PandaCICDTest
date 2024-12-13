@@ -1,0 +1,17 @@
+name: My Panda CI
+on:
+  push: #when you push into the main branch, this whole thing will run
+    branches: [main] #can be master also
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest #docker image
+    name: my-build
+    steps:
+      - name: Check out code #Clone
+        uses: actions/checkout@v4 #this is a repository in "github.com/actions/checkout". PLUGIN. clones the GitHub repo to $GITHUB_WORKSPACE to accomplish various jobs, such as building, testing, and deploying the code
+      - name: Setup Go
+        uses: actions/setup-go@v5.2.0 #The setup-go action setup a go environtment
+        with:
+          go-version: 1.17.0
+  
