@@ -37,4 +37,5 @@ jobs:
           ls
           cd hiddenFolder
           ls
+          cat README.md
   
